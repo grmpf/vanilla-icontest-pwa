@@ -1,0 +1,20 @@
+{
+  "name": "vanilla-icontest-pwa",
+  "description": "Simple PWA for testing and as reference",
+  "version": "0.0.1",
+  "license": "",
+  "private": true,
+  "homepage": "https://github.com/grmpf/vanilla-icontest-pwa",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grmpf/vanilla-icontest-pwa.git"
+  },
+  "scripts": {
+    "dev": "npx serve -p 3232",
+    "dev2": "node server.js 3131"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {}
+}

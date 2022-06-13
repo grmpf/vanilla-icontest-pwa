@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="de" translate="no"><!-- translate="no" should replace the meta tag but doesn't work for chrome atm -->
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"/>
+    <meta name="google" content="notranslate"/><!-- disable translator on all non-default language pages - aka the already translated pages -->
+
+    <title>IconTest PWA</title>
+    <meta name="description" content="Simple PWA für Tests und als Referenz"/>
+    <meta name="keywords" content="PWA, Test"/>
+    <link rel="manifest" href="/manifest-de.json"/>
+    <link rel="icon" type="image/x-icon" sizes="any" href="/favicon.ico"/>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+
+    <link rel="alternate icon" sizes="32x32" type="image/png" href="/assets/imgs/icons/favicon-32x32.png"/>
+    <link rel="alternate icon" sizes="16x16" type="image/png" href="/assets/imgs/icons/favicon-16x16.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+    <link rel="mask-icon" color="#5299d1" href="/safari-pinned-tab.svg"/>
+    <meta name="apple-mobile-web-app-title" content="IconTest PWA"/>
+    <meta name="application-name" content="IconTest PWA"/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#5299d1"/>
+
+    <link rel="canonical" href="https://icontest-pwa.vercel.app/de"/>
+    <link rel="alternate" hreflang="en" href="https://icontest-pwa.vercel.app/"/>
+    <link rel="alternate" hreflang="de" href="https://icontest-pwa.vercel.app/de"/>
+    <link rel="alternate" hreflang="x-default" href="https://icontest-pwa.vercel.app/"/>
+
+    <meta property="og:locale" content="de"/>
+    <meta property="og:site_name" content="IconTest PWA"/>
+    <meta property="og:description" content="Simple PWA für Tests und als Referenz"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://icontest-pwa.vercel.app/de"/>
+    <meta property="og:image" content="https://icontest-pwa.vercel.app/assets/imgs/share.jpg"/>
+    <meta property="og:image:type" content="image/jpeg"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <meta property="og:image:alt" content="Interactive Background: Clock, Custom Text and more to come..."/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="@grmpf_"/>
+
+    <!--
+    - svg "should" work according to google (not confirmed if it works) but png would be the safe bet for all search engines.
+      - "url": "https://icontest-pwa.vercel.app/assets/imgs/logo.svg",
+      - "contentUrl": "https://icontest-pwa.vercel.app/assets/imgs/logo.svg",
+    - "url": "https://icontest-pwa.vercel.app/app/uploads/2015/09/Yoast-Logo-Icon-120x120.png"
+    - WebPage => "inLanguage": "en-US" ???
+    -->
+    <script type="application/ld+json" class="jsonld-schema-graph">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "Organization",
+                    "@id": "https://icontest-pwa.vercel.app/#organization",
+                    "url": "https://icontest-pwa.vercel.app/",
+                    "name": "IconTest PWA",
+                    "slogan": "Test your stuff",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "@id": "https://icontest-pwa.vercel.app/#logo",
+                        "url": "https://icontest-pwa.vercel.app/assets/imgs/icons/android-chrome-512x512.png",
+                        "contentUrl": "https://icontest-pwa.vercel.app/assets/imgs/icons/android-chrome-512x512.png",
+                        "width": 512,
+                        "height": 512,
+                        "caption": "IconTest PWA"
+                    },
+                    "image": {
+                        "@id": "https://icontest-pwa.vercel.app/#logo"
+                    },
+                    "sameAs":[
+                        "https://twitter.com/grmpf_",
+                        "https://github.com/grmpf"
+                    ]
+                },
+                {
+                    "@type": "WebSite",
+                    "@id": "https://icontest-pwa.vercel.app/#website",
+                    "url": "https://icontest-pwa.vercel.app/",
+                    "name": "IconTest PWA",
+                    "publisher": {
+                        "@id": "https://icontest-pwa.vercel.app/#organization"
+                    },
+                    "potentialAction": [
+                        {
+                            "@type": "SearchAction",
+                            "query-input": "required name=search_term_string",
+                            "target": {
+                                "@type": "EntryPoint",
+                                "urlTemplate": "https://icontest-pwa.vercel.app/de?text={search_term_string}"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "@type": "WebPage",
+                    "@id": "https://icontest-pwa.vercel.app/de#webpage",
+                    "url": "https://icontest-pwa.vercel.app/de",
+                    "name": "IconTest PWA",
+                    "description": "Simple PWA für Tests und als Referenz",
+                    "isPartOf": {
+                        "@id": "https://icontest-pwa.vercel.app/#website"
+                    },
+                    "about": {
+                        "@id": "https://icontest-pwa.vercel.app/#organization"
+                    },
+                    "image": {
+                        "@type": "ImageObject",
+                        "@id": "https://icontest-pwa.vercel.app/de#primaryimage",
+                        "url": "https://icontest-pwa.vercel.app/assets/imgs/share.jpg",
+                        "width": 1200,
+                        "height": 630,
+                        "caption": "Interactive Background: Clock, Custom Text and more to come..."
+                    },
+                    "primaryImageOfPage": {
+                        "@id": "https://icontest-pwa.vercel.app/de#primaryimage"
+                    },
+                    "breadcrumb":{
+                        "@id":"https://icontest-pwa.vercel.app/de#breadcrumb"
+                    }
+                },
+                {
+                    "@type": "BreadcrumbList",
+                    "@id": "https://icontest-pwa.vercel.app/de#breadcrumb",
+                    "itemListElement":  [
+                        {
+                            "@type": "ListItem",
+                            "position":1,
+                            "@id": "https://icontest-pwa.vercel.app/de#home",
+                            "item": {
+                                "@id": "https://icontest-pwa.vercel.app/de#webpage"
+                            }
+                            ,"debug": "aaa1"
+                        }
+                    ]
+                }
+            ]
+        }
+    </script>
+
+    <meta name="robots" content="index,follow"/>
+    <link rel="stylesheet" href="/assets/styles/main.css"/>
+
+    <script type="text/javascript">
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", function () {
+                console.log('INIT inline');
+                //navigator.serviceWorker && navigator.serviceWorker.register("/sw.js");
+
+                // TEEEEEST
+                navigator.serviceWorker && navigator.serviceWorker.register("/sw.js").then(function(registration) {
+                    // Registration was successful
+                    console.log('[Service Worker] registration successful with scope: ', registration.scope);
+                }, function(err) {
+                    // registration failed :(
+                    console.log('[Service Worker] registration failed: ', err);
+                });
+            });
+        }
+    </script>
+
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://icontest-pwa.vercel.app/opensearch-de.xml"
+          title="IconTest PWA DE"
+    />
+
+</head>
+<body>
+<a class="sr-only" href="#main-content">Skip to main content</a>
+
+<div class="centerContainer">
+    <div class="containerInner">
+
+        <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 16 16"
+                 width="100%" height="100%"
+                 fill="#5299d1">
+                <g id="favPath" fill="url(#gradient)" stroke="black" stroke-width="0.2">
+                    <rect x="5.5" y="0.2" rx="0.7" ry="0.7" width="1.4" height="15.6"/>
+                    <rect x="9" y="0.2" rx="0.7" ry="0.7" width="1.4" height="15.6"/>
+                    <rect x="0.2" y="5.5" rx="0.7" ry="0.7" width="15.6" height="1.4"/>
+                    <rect x="0.2" y="9" rx="0.7" ry="0.7" width="15.6" height="1.4"/>
+                    <rect x="2" y="2" width="12" height="12" rx="1.3" ry="1.3" />
+                </g>
+                <path fill="#FFF" d="M3.21,9.768l-0,-0.62c0.389,0.163 0.722,0.244 0.998,0.244c0.194,0 0.347,-0.043 0.458,-0.129c0.112,-0.086 0.167,-0.204 0.167,-0.352c0,-0.117 -0.034,-0.216 -0.104,-0.296c-0.07,-0.081 -0.203,-0.176 -0.398,-0.287l-0.242,-0.134c-0.324,-0.183 -0.553,-0.357 -0.686,-0.524c-0.134,-0.167 -0.2,-0.362 -0.2,-0.585c-0,-0.298 0.109,-0.537 0.328,-0.718c0.219,-0.18 0.508,-0.271 0.868,-0.271c0.288,0 0.613,0.042 0.974,0.125l0,0.579c-0.369,-0.139 -0.662,-0.208 -0.876,-0.208c-0.166,-0 -0.299,0.037 -0.4,0.111c-0.1,0.074 -0.15,0.171 -0.15,0.292c0,0.099 0.035,0.186 0.105,0.261c0.07,0.075 0.202,0.167 0.396,0.276l0.259,0.144c0.348,0.195 0.588,0.375 0.72,0.54c0.132,0.164 0.198,0.364 0.198,0.6c-0,0.335 -0.125,0.598 -0.374,0.789c-0.249,0.19 -0.592,0.285 -1.03,0.285c-0.29,0 -0.627,-0.04 -1.011,-0.122Zm9.438,-0.053c-0.452,0.117 -0.843,0.175 -1.171,0.175c-0.624,0 -1.103,-0.164 -1.437,-0.492c-0.335,-0.328 -0.502,-0.798 -0.502,-1.41c0,-0.607 0.167,-1.074 0.502,-1.401c0.334,-0.327 0.811,-0.491 1.429,-0.491c0.396,0 0.788,0.047 1.177,0.14l-0,0.588c-0.451,-0.155 -0.821,-0.232 -1.111,-0.232c-0.382,-0 -0.678,0.122 -0.886,0.366c-0.208,0.244 -0.313,0.59 -0.313,1.038c0,0.433 0.112,0.773 0.335,1.019c0.223,0.247 0.53,0.37 0.923,0.37c0.086,-0 0.187,-0.012 0.302,-0.037l0,-1.189l0.752,0l0,1.556Zm-5.434,0.085l-1.336,-3.613l0.804,-0l1.035,2.795l1.001,-2.795l0.542,-0l-1.292,3.613l-0.754,0Z"/>
+                <defs>
+                    <radialGradient id="gradient" cx="7" cy="1.74" r="56" gradientUnits="userSpaceOnUse">
+                        <stop class="gstop" stop-color="#5299d1" offset="0.003435"/>
+                        <stop class="gstop" stop-color="#1d508f" offset="0.3"/>
+                        <stop class="gstop" stop-color="#04142e" offset="1"/>
+                    </radialGradient>
+                </defs>
+            </svg>
+        </div>
+        <hr/>
+
+        <div id="main-content">
+            <h1 style="word-spacing: 0.2em">
+                (fav)icon Test PWA
+            </h1>
+            <div class="description">
+                Simple Vanilla-JS PWA für Tests und als Referenz
+            </div>
+            <!--
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat leo in massa consequat, hendrerit venenatis sapien auctor. Vestibulum porttitor vestibulum vestibulum. Suspendisse libero ipsum, viverra eget egestas eget, finibus vitae turpis. Nullam non mattis arcu
+            </div>
+            -->
+            <hr/>
+            <!--
+            <span style="padding: 0 2px;">DE</span>
+            -->
+            <a href="/">EN</a> | <a class="bold" href="/de">DE</a>
+
+            <hr/>
+            <!--
+            <div>
+                <b>JS - <span style="color: red;">TODO</span>:</b><br/>
+                Installiert (PWA): <span id="isPWA">NO</span><br/>
+                window-controls-overlay (PWA): <span id="controlsOverlay">NO</span><br/>
+            </div>
+            <hr/>
+            -->
+
+            <div>
+                <a href="/de/test.html" style="display: inline-block;" title="Test Seite mit full-size Logo.">
+                    Test Seite
+                </a>
+                <!--
+                -->
+                <br/>
+                <a href="/de/debug.html" style="display: inline-block;" title="Debug Seite um Anfragen etc. zu testen.">
+                    Debug Seite
+                </a>
+                <br/>
+                <a href="https://github.com/grmpf/vanilla-icontest-pwa#readme" style="display: inline-block;" target="_blank" rel="noopener noreferrer" title="Wissensdatenbank & Probleme (GitHub)">
+                    Infos &amp; Probleme
+                    <span style="position: relative; top: 2px;">&#8599;</span>
+                    <!--
+                    <svg style="position: relative; top: 1px;" width="12" height="12" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M16 0C7.16 0 0 7.16 0 16C0 23.08 4.58 29.06 10.94 31.18C11.74 31.32 12.04 30.84 12.04 30.42C12.04 30.04 12.02 28.78 12.02 27.44C8 28.18 6.96 26.46 6.64 25.56C6.46 25.1 5.68 23.68 5 23.3C4.44 23 3.64 22.26 4.98 22.24C6.24 22.22 7.14 23.4 7.44 23.88C8.88 26.3 11.18 25.62 12.1 25.2C12.24 24.16 12.66 23.46 13.12 23.06C9.56 22.66 5.84 21.28 5.84 15.16C5.84 13.42 6.46 11.98 7.48 10.86C7.32 10.46 6.76 8.82 7.64 6.62C7.64 6.62 8.98 6.2 12.04 8.26C13.32 7.9 14.68 7.72 16.04 7.72C17.4 7.72 18.76 7.9 20.04 8.26C23.1 6.18 24.44 6.62 24.44 6.62C25.32 8.82 24.76 10.46 24.6 10.86C25.62 11.98 26.24 13.4 26.24 15.16C26.24 21.3 22.5 22.66 18.94 23.06C19.52 23.56 20.02 24.52 20.02 26.02C20.02 28.16 20 29.88 20 30.42C20 30.84 20.3 31.34 21.1 31.18C27.42 29.06 32 23.06 32 16C32 7.16 24.84 0 16 0V0Z"/>
+                    </svg>
+                    -->
+                </a>
+            </div>
+            <hr/>
+
+            <div>
+                <!--<b>CSS:</b><br/>-->
+                Dunkel-Modus: <span id="darkMode"></span><br/>
+                Hoher Kontrast: <span id="highContrast"></span><br/>
+                Bewegungen reduziert: <span id="reducedMotion"></span><br/>
+                <!--Transparenz reduziert: <span id="reducedTrans"></span><br/>-->
+            </div>
+            <hr/>
+
+            <div class="small bold">
+                Aufgerufene Ressourcen (sollten existieren)
+            </div>
+            <div id="debugList" class="debugList show-mobileXY" style="max-widthXY: 280px;">&middot;&middot;&middot;</div>
+            <hr/>
+
+            <div class="small bold">
+                Browser Informationen
+            </div>
+            <div id="debugListX" class="debugListX show-mobileXY" style="max-width: 280px;">&middot;&middot;&middot;</div>
+        </div>
+
+    </div>
+</div>
+<!--
+<div id="debugList2" class="debugList hide-mobileXY"></div>
+-->
+
+<script type="text/javascript" src="/assets/scripts/main.js" async></script>
+<script type="text/javascript" src="/assets/scripts/stats.js" defer></script>
+<!--
+<script type="text/javascript" src="/assets/scripts/stats.js" async></script>
+-->
+
+</body>
+</html>

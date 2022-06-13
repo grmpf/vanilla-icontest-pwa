@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+    <ShortName>IconTest PWA DE</ShortName>
+    <LongName>IconTest PWA Suche</LongName>
+    <Description>IconTest PWA Such-Plugin - Test</Description>
+    <Image height="16" width="16" type="image/x-icon">https://icontest-pwa.vercel.app/favicon.ico</Image>
+    <Url type="text/html" template="https://icontest-pwa.vercel.app/?s={searchTerms}&amp;plugin=1"/>
+    <Url type="application/opensearchdescription+xml" rel="self" template="https://icontest-pwa.vercel.app/opensearch-de.xml" />
+    <Query role="example" searchTerms="LOREM%20IPSUM" />
+    <InputEncoding>UTF-8</InputEncoding>
+    <OutputEncoding>UTF-8</OutputEncoding>
+</OpenSearchDescription>

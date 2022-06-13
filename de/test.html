@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="de" translate="no"><!-- translate="no" should replace the meta tag but doesn't work for chrome atm -->
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"/>
+    <meta name="google" content="notranslate"/><!-- disable translator on all non-default language pages - aka the already translated pages -->
+
+    <title>Test-Seite | IconTest PWA</title>
+    <meta name="description" content="Test Seite mit full-size Logo."/>
+    <link rel="manifest" href="/manifest.json"/>
+    <link rel="icon" type="image/x-icon" sizes="any" href="/favicon.ico"/>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+
+    <link rel="alternate icon" sizes="32x32" type="image/png" href="/assets/imgs/icons/favicon-32x32.png"/>
+    <link rel="alternate icon" sizes="16x16" type="image/png" href="/assets/imgs/icons/favicon-16x16.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+    <link rel="mask-icon" color="#5299d1" href="/safari-pinned-tab.svg"/>
+    <meta name="apple-mobile-web-app-title" content="IconTest PWA"/>
+    <meta name="application-name" content="IconTest PWA"/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#5299d1"/>
+
+    <link rel="canonical" href="https://icontest-pwa.vercel.app/de/test.html"/>
+    <link rel="alternate" hreflang="en" href="https://icontest-pwa.vercel.app/test.html"/>
+    <link rel="alternate" hreflang="de" href="https://icontest-pwa.vercel.app/de/test.html"/>
+    <link rel="alternate" hreflang="x-default" href="https://icontest-pwa.vercel.app/test.html"/>
+
+    <meta property="og:locale" content="de"/>
+    <meta property="og:site_name" content="Test-Seite | IconTest PWA"/>
+    <meta property="og:description" content="Test Seite mit full-size Logo."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://icontest-pwa.vercel.app/de/test.html"/>
+    <meta property="og:image" content="https://icontest-pwa.vercel.app/assets/imgs/share-test.png"/>
+    <meta property="og:image:type" content="image/png"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <meta property="og:image:alt" content="Interactive Background: Clock, Custom Text and more to come..."/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="@grmpf_"/>
+
+    <!--
+    - svg "should" work according to google (not confirmed if it works) but png would be the safe bet for all search engines.
+      - "url": "https://icontest-pwa.vercel.app/assets/imgs/logo.svg",
+      - "contentUrl": "https://icontest-pwa.vercel.app/assets/imgs/logo.svg",
+    - "url": "https://icontest-pwa.vercel.app/app/uploads/2015/09/Yoast-Logo-Icon-120x120.png"
+    - WebPage => "inLanguage": "en-US" ???
+    -->
+    <script type="application/ld+json" class="jsonld-schema-graph">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "Organization",
+                    "@id": "https://icontest-pwa.vercel.app/#organization",
+                    "url": "https://icontest-pwa.vercel.app/",
+                    "name": "IconTest PWA",
+                    "slogan": "Test your stuff",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "@id": "https://icontest-pwa.vercel.app/#logo",
+                        "url": "https://icontest-pwa.vercel.app/assets/imgs/icons/android-chrome-512x512.png",
+                        "contentUrl": "https://icontest-pwa.vercel.app/assets/imgs/icons/android-chrome-512x512.png",
+                        "width": 512,
+                        "height": 512,
+                        "caption": "IconTest PWA"
+                    },
+                    "image": {
+                        "@id": "https://icontest-pwa.vercel.app/#logo"
+                    },
+                    "sameAs":[
+                        "https://twitter.com/grmpf_",
+                        "https://github.com/grmpf"
+                    ]
+                },
+                {
+                    "@type": "WebSite",
+                    "@id": "https://icontest-pwa.vercel.app/#website",
+                    "url": "https://icontest-pwa.vercel.app/",
+                    "name": "IconTest PWA",
+                    "publisher": {
+                        "@id": "https://icontest-pwa.vercel.app/#organization"
+                    }
+                },
+                {
+                    "@type": "WebPage",
+                    "@id": "https://icontest-pwa.vercel.app/de/test.html#webpage",
+                    "url": "https://icontest-pwa.vercel.app/de/test.html",
+                    "name": "Test-Seite",
+                    "description": "Test-Seite mit animiertem full-size Logo",
+                    "isPartOf": {
+                        "@id": "https://icontest-pwa.vercel.app/#website"
+                    },
+                    "about": {
+                        "@id": "https://icontest-pwa.vercel.app/#organization"
+                    },
+                    "image": {
+                        "@type": "ImageObject",
+                        "@id": "https://icontest-pwa.vercel.app/de/test.html#primaryimage",
+                        "url": "https://icontest-pwa.vercel.app/assets/imgs/share-test.png",
+                        "width": 1200,
+                        "height": 630,
+                        "caption": "DP Logo"
+                    },
+                    "primaryImageOfPage": {
+                        "@id": "https://icontest-pwa.vercel.app/de/test.html#primaryimage"
+                    },
+
+                    "breadcrumb":{
+                        "@id":"https://icontest-pwa.vercel.app/de/test.html#breadcrumb"
+                    }
+                },
+                {
+                    "@type": "BreadcrumbList",
+                    "@id": "https://icontest-pwa.vercel.app/de/test.html#breadcrumb",
+                    "itemListElement":  [
+                        {
+                            "@type": "ListItem",
+                            "position":1,
+                            "@id": "https://icontest-pwa.vercel.app/#home",
+                            "item": {
+                                "@type": "WebPage",
+                                "@id": "https://icontest-pwa.vercel.app/#home",
+                                "url": "https://icontest-pwa.vercel.app/",
+                                "name": "Home"
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "item": {
+                                "@id": "https://icontest-pwa.vercel.app/de/test.html#webpage"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    </script>
+
+    <meta name="robots" content="index,follow"/>
+    <link rel="stylesheet" href="/assets/styles/main.css"/>
+</head>
+<body>
+<a href="/de" style="display: block; height: 100%;">
+    <svg xmlns="http://www.w3.org/2000/svg"
+         viewBox="-6 -8 24.66 22"
+         width="100%" height="100%"
+         style="color: #181818;"
+    >
+        <defs>
+            <!-- d -->
+            <line id="s1" x1="2.7" x2="2.7" y1="6" y2="2.5"/>
+            <line id="s2" x1="5.7" x2="5.7" y1="0" y2="6"/>
+            <!-- p -->
+            <line id="s3" x1="8.7" x2="8.7" y1="6" y2="0"/>
+            <line id="s4" x1="11.7" x2="11.7" y1="0" y2="3.5"/>
+        </defs>
+
+        <!-- DUMMY ANIMATION LOOP (starts after 0s and restarts after duration + 1.5s)-->
+        <rect width="0" height="0">
+            <animate id="animloop" begin="0;animloop.end+1.5s" dur="10s"
+                     attributeName="visibility" attributeType="XML"
+                     from="hidden" to="hidden"
+                     fill="freeze"/>
+        </rect>
+
+        <!-- LINES - V -->
+        <g id="g2" fill="none" stroke="currentColor" opacity="0.0" stroke-width="0.02" stroke-opacity="0.3">
+            <!--
+            <line x1="0.06" x2="0.06" y1="-100" y2="200" stroke="red"/>
+            <line x1="14.4" x2="14.4" y1="-100" y2="200" stroke="red"/>
+            -->
+
+            <line x1="1.8" x2="1.8" y1="-100" y2="200"/>
+            <line x1="3.6" x2="3.6" y1="-100" y2="200"/>
+            <line x1="4.8" x2="4.8" y1="-100" y2="200"/>
+            <line x1="6.6" x2="6.6" y1="-100" y2="200"/>
+            <line x1="7.8" x2="7.8" y1="-100" y2="200"/>
+            <line x1="9.6" x2="9.6" y1="-100" y2="200"/>
+            <line x1="10.8" x2="10.8" y1="-100" y2="200"/>
+            <line x1="12.6" x2="12.6" y1="-100" y2="200"/>
+
+            <!-- extra left/right lines
+            -->
+            <line x1="0.6" x2="0.6" y1="-100" y2="200"/>
+            <line x1="13.8" x2="13.8" y1="-100" y2="200"/>
+
+
+            <!-- fade-in -->
+            <animate attributeName="opacity"
+                     attributeType="XML"
+                     begin="animloop.begin+0.6s"
+                     from="0.0"
+                     to="1.0"
+                     dur="0.4s"
+                     fill="freeze"
+            />
+
+            <animateTransform attributeName="transform"
+                              attributeType="XML"
+                              type="skewX"
+                              begin="animloop.begin+0.6s"
+                              from="0"
+                              to="-16.18"
+                              dur="0.5s"
+                              fill="freeze"
+            />
+
+            <!-- fade-out -->
+            <animate attributeName="opacity"
+                     attributeType="XML"
+                     begin="bigstroke.end+1s"
+                     from="1.0"
+                     to="0.0"
+                     dur="0.5s"
+                     fill="freeze"
+            />
+            <!-- resets -->
+            <animateTransform attributeName="transform"
+                              attributeType="XML"
+                              type="skewX"
+                              begin="animloop.end"
+                              from="-16.18"
+                              to="0"
+                              dur="0.001s"
+                              fill="freeze"
+            />
+        </g>
+
+        <!-- LINES - H -->
+        <g id="g1" transform="skewX(0)" opacity="0.0" fill="none" stroke="currentColor" stroke-width="0.02" stroke-opacity="0.15">
+            <line x1="-100" x2="200" y1="0" y2="0"/>
+            <line x1="-100" x2="200" y1="2.5" y2="2.5"/>
+            <line x1="-100" x2="200" y1="3.5" y2="3.5"/>
+            <line x1="-100" x2="200" y1="6" y2="6"/>
+
+            <!-- extra top/bottom lines
+            -->
+            <line x1="-100" x2="200" y1="-1" y2="-1.2"/>
+            <line x1="-100" x2="200" y1="7" y2="7.2"/>
+
+            <!-- fade-in -->
+            <animate attributeName="opacity"
+                     attributeType="XML"
+                     begin="animloop.begin+0.6s"
+                     from="0.0"
+                     to="1.0"
+                     dur="0.4s"
+                     fill="freeze"
+            />
+            <!-- fade-out -->
+            <animate attributeName="opacity"
+                     attributeType="XML"
+                     begin="bigstroke.end+1s"
+                     from="1.0"
+                     to="0.0"
+                     dur="0.5s"
+                     fill="freeze"
+            />
+        </g>
+
+        <!-- small parts -->
+        <g transform="skewX(-16.18)" stroke="currentColor" stroke-width="1.8" stroke-dasharray="7" stroke-dashoffset="7">
+            <use href="#s1" class="strokeA"/>
+            <use href="#s4" class="strokeA"/>
+            <animate attributeName="stroke-dashoffset"
+                     attributeType="XML"
+                     begin="animloop.begin+2.2s"
+                     from="7"
+                     to="0"
+                     dur="0.6s"
+                     calcMode="linear"
+                     fill="freeze"
+            />
+
+            <!-- fade-out -->
+            <animate id="smallopa" attributeName="opacity"
+                     attributeType="XML"
+                     begin="animloop.end"
+                     from="1.0"
+                     to="0.0"
+                     dur="0.5s"
+                     fill="freeze"
+            />
+            <!-- resets -->
+            <animate attributeName="stroke-dashoffset"
+                     attributeType="XML"
+                     begin="smallopa.end"
+                     from="0"
+                     to="7"
+                     dur="0.001s"
+                     calcMode="linear"
+                     fill="freeze"
+            />
+            <animate attributeName="opacity"
+                     attributeType="XML"
+                     begin="smallopa.end"
+                     from="0.0"
+                     to="1.0"
+                     dur="0.001s"
+                     fill="freeze"
+            />
+        </g>
+
+        <!-- big parts -->
+        <g transform="skewX(-16.18)" stroke="currentColor" stroke-width="1.8" stroke-dasharray="12" stroke-dashoffset="12">
+            <use href="#s2" class="strokeB"/>
+            <use href="#s3" class="strokeB"/>
+            <!--
+             <animate attributeName="stroke-width"
+                                      attributeType="XML"
+                                      begin="1.5s"
+                                      from="0.05"
+                                      to="1.8"
+                                      dur="0.3s"
+                                      fill="freeze"
+             />
+            -->
+
+            <animate id="bigstroke" attributeName="stroke-dashoffset"
+                     attributeType="XML"
+                     begin="animloop.begin+1.6s"
+                     from="12"
+                     to="0"
+                     dur="1s"
+                     calcMode="linear"
+                     fill="freeze"
+            />
+
+            <!-- fade-out -->
+            <animate id="bigopa" attributeName="opacity"
+                     attributeType="XML"
+                     begin="animloop.end"
+                     from="1.0"
+                     to="0.0"
+                     dur="0.5s"
+            />
+            <!-- resets -->
+            <animate attributeName="stroke-dashoffset"
+                     attributeType="XML"
+                     begin="bigopa.end"
+                     from="0"
+                     to="12"
+                     dur="0.001s"
+                     calcMode="linear"
+                     fill="freeze"
+            />
+            <animate attributeName="opacity"
+                     attributeType="XML"
+                     begin="bigopa.end"
+                     from="0.0"
+                     to="1.0"
+                     dur="0.001s"
+                     fill="freeze"
+            />
+        </g>
+    </svg>
+</a>
+
+<div style="position: absolute; bottom: 0; left: 0; right: 0; text-align: center;">
+    <span style="display: inline-block; background-color: rgba(0,0,0, 0.1); padding: 6px 10px; color: #777;">
+        Test Logo &ndash; Animiert
+    </span>
+</div>
+
+<!--
+<script type="text/javascript" src="/assets/scripts/stats.js" async></script>
+-->
+
+</body>
+</html>

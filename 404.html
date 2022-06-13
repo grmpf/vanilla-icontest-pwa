@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"/>
+
+
+    <title>Error 404 | IconTest PWA</title>
+    <meta name="description" content="Error"/>
+    <link rel="manifest" href="/manifest.json"/>
+    <link rel="icon" type="image/x-icon" sizes="any" href="/favicon.ico"/>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+
+    <link rel="alternate icon" sizes="32x32" type="image/png" href="/assets/imgs/icons/favicon-32x32.png"/>
+    <link rel="alternate icon" sizes="16x16" type="image/png" href="/assets/imgs/icons/favicon-16x16.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+    <link rel="mask-icon" color="#5299d1" href="/safari-pinned-tab.svg"/>
+    <meta name="apple-mobile-web-app-title" content="IconTest PWA"/>
+    <meta name="application-name" content="IconTest PWA"/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#5299d1"/>
+
+    <script type="application/ld+json" class="jsonld-schema-graph">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "Organization",
+                    "@id": "https://icontest-pwa.vercel.app/#organization",
+                    "url": "https://icontest-pwa.vercel.app/",
+                    "name": "IconTest PWA",
+                    "slogan": "Test your stuff",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "@id": "https://icontest-pwa.vercel.app/#logo",
+                        "url": "https://icontest-pwa.vercel.app/assets/imgs/icons/android-chrome-512x512.png",
+                        "contentUrl": "https://icontest-pwa.vercel.app/assets/imgs/icons/android-chrome-512x512.png",
+                        "width": 512,
+                        "height": 512,
+                        "caption": "IconTest PWA"
+                    },
+                    "image": {
+                        "@id": "https://icontest-pwa.vercel.app/#logo"
+                    },
+                    "sameAs":[
+                        "https://twitter.com/grmpf_",
+                        "https://github.com/grmpf"
+                    ]
+                },
+                {
+                    "@type": "WebSite",
+                    "@id": "https://icontest-pwa.vercel.app/#website",
+                    "url": "https://icontest-pwa.vercel.app/",
+                    "name": "IconTest PWA",
+                    "publisher": {
+                        "@id": "https://icontest-pwa.vercel.app/#organization"
+                    },
+                    "potentialAction": [
+                        {
+                            "@type": "SearchAction",
+                            "query-input": "required name=search_term_string",
+                            "target": {
+                                "@type": "EntryPoint",
+                                "urlTemplate": "https://icontest-pwa.vercel.app/?text={search_term_string}"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "@type": "WebPage",
+                    "@id": "https://icontest-pwa.vercel.app/404.html#webpage",
+                    "url": "https://icontest-pwa.vercel.app/404.html",
+                    "name": "Error 404 | IconTest PWA",
+                    "description": "Simple PWA for testing and as reference",
+                    "isPartOf": {
+                        "@id": "https://icontest-pwa.vercel.app/#website"
+                    },
+                    "about": {
+                        "@id": "https://icontest-pwa.vercel.app/#organization"
+                    },
+
+                    "breadcrumb":{
+                        "@id":"https://icontest-pwa.vercel.app/404.html#breadcrumb"
+                    }
+                },
+                {
+                    "@type": "BreadcrumbList",
+                    "@id": "https://icontest-pwa.vercel.app/404.html#breadcrumb",
+                    "itemListElement":  [
+                        {
+                            "@type": "ListItem",
+                            "position":1,
+                            "@id": "https://icontest-pwa.vercel.app/#home",
+                            "item": {
+                                "@id": "https://icontest-pwa.vercel.app/#webpage"
+                            }
+                            ,"debug": "aaa1"
+                        }
+                    ]
+                }
+            ]
+        }
+    </script>
+
+    <meta name="robots" content="index,follow"/>
+    <link rel="stylesheet" href="/assets/styles/main.css"/>
+
+    <script type="text/javascript">
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", function () {
+                //navigator.serviceWorker && navigator.serviceWorker.register("/sw.js");
+
+                // TEEEEEST
+                navigator.serviceWorker && navigator.serviceWorker.register("/sw.js").then(function(registration) {
+                    // Registration was successful
+                    console.log('[Service Worker] registration successful with scope: ', registration.scope);
+                }, function(err) {
+                    // registration failed :(
+                    console.log('[Service Worker] registration failed: ', err);
+                });
+            });
+        }
+    </script>
+
+    <link rel="search"
+          type="application/opensearchdescription+xml"
+          href="https://icontest-pwa.vercel.app/opensearch.xml"
+          title="IconTest PWA"
+    />
+
+</head>
+<body>
+
+<div class="centerContainer">
+    <div class="containerInner" style="padding: 20px 0;">
+
+        <a class="logo" href="/">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 16 16"
+                 width="100%" height="100%"
+                 fill="#5299d1">
+                <path id="favPath" fill="url(#gradient)" d="M11.473 9a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 14h8.5a2.5 2.5 0 1 0-.027-5zM14.544 9.772a3.506 3.506 0 0 0-2.225-1.676 5.502 5.502 0 0 0-6.337-4.002 4.002 4.002 0 0 1 7.392.91 2.5 2.5 0 0 1 1.17 4.769z"/>
+                <defs>
+                    <radialGradient id="gradient" cx="10.4" cy="2.6" r="84" gradientUnits="userSpaceOnUse" >
+                        <stop class="gstop" offset="0.00343514" stop-color="#5299d1"/>
+                        <stop class="gstop" offset="0.3" stop-color="#1d508f"/>
+                        <stop class="gstop" offset="1" stop-color="#04142e"/>
+                    </radialGradient>
+                    <style type="text/css">
+                        /*
+                        #favPath {
+                            transition: fill 1s;
+                        }
+                        @media screen and (prefers-contrast: more) {
+                            #favPath {
+                                fill: #5299d1;
+                            }
+                        }
+                        */
+                    </style>
+                </defs>
+            </svg>
+        </a>
+
+        <hr/>
+        <h1>
+            ERROR 404<!-- <a href="/404.html">↺</a>-->
+        </h1>
+        <hr/>
+<!--
+        <div id="debugList" class="debugList">&middot;&middot;&middot;</div>
+        <hr/>
+        <div id="debugListX" class="debugListX show-mobileXY" style="max-width: 280px;">&middot;&middot;&middot;</div>
+        <hr/>
+-->
+
+        <div>
+            <a class="bold" href="/" style="display: inline-block;">
+                &DoubleLeftArrow; HOME
+            </a>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/assets/scripts/main.js" defer></script>
+<script type="text/javascript" src="/assets/scripts/stats.js" async></script>
+<!--
+-->
+
+</body>
+</html>
